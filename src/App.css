@@ -1,4 +1,4 @@
-/* App.css */
+
 
 .App {
   max-width: 800px;
@@ -36,14 +36,12 @@ img {
   margin-top: 10px;
 }
 
-/* Optional: Style for better readability of selected options in dropdowns */
 select {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-/* Optional: Apply styles when hovering over user cards */
 .user-card:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
@@ -52,7 +50,7 @@ select {
   margin-top: 20px;
   display: flex;
   gap: 10px;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap; 
 }
 
 button {
@@ -68,7 +66,7 @@ button.active {
   border-color: #007bff;
 }
 
-/* Team Details CSS */
+
 
 .team-details {
   margin-top: 20px;
@@ -112,7 +110,6 @@ button.active {
   color: #555;
 }
 
-/* Disabled Button CSS */
 
 button.disabled {
   background-color: #ccc;

@@ -1,4 +1,4 @@
-// App.js
+
 
 import React, { useState } from 'react';
 import './App.css';
@@ -57,7 +57,7 @@ const App = () => {
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
-    setCurrentPage(1); // Reset to the first page when the search query changes
+    setCurrentPage(1);
   };
 
   const handleFilterChange = (filterType, value) => {
@@ -65,13 +65,11 @@ const App = () => {
       ...filters,
       [filterType]: value,
     });
-    setCurrentPage(1); // Reset to the first page when filters change
+    setCurrentPage(1); 
   };
 
   const addToTeam = (user) => {
-    // Check if the user is available before adding to the team
     if (user.available) {
-      // Check if the user's domain is already in the team
       if (!team.some((teamUser) => teamUser.domain === user.domain)) {
         setTeam([...team, user]);
       }
